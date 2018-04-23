@@ -1,0 +1,27 @@
+/*
+ * update the navigation
+ * element: the dom element that contains the <dfc-tags> to update
+ * hash: hash with the name of the dfc-tag to update as the key and the value with the new value
+ * breadcumbs: Array of hash with each breadcumb
+*/
+function updateNavBar(element, hash, breadcumbs) {
+	var newInnerHTML = element.innerHTML,
+			breadcumbsStr = '';
+
+	for (var i in breadcumbs){
+		var breadcumb = breadcumbs[i];
+		if (typeof breadcumb !== 'string') {
+			breadcumbsStr += '<a href="' + breadcumb.href + '">' + breadcumb.text + '</a> &#187; ';
+		} else {
+			breadcumbsStr += breadcumb;
+		}
+	}
+	hash.breadcumbs = breadcumbsStr;
+
+	for (var key in hash) {
+		var value = hash[key];
+		newInnerHTML = newInnerHTML.replace(new RegExp('(<|&lt;)dfc-'+key+'\/(>|&gt;)|(<|&lt;)dfc-'+key+'(>|&gt;)[\\s\\n\\r]*(<|&lt;)\/dfc-'+key+'(>|&gt;)','gim'), value);
+	}
+
+	element.innerHTML = newInnerHTML;
+}

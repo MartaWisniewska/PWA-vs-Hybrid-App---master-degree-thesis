@@ -1,0 +1,332 @@
+aside {
+	margin-bottom: 30px;
+}
+
+.articleBody {
+	padding-top: 10px;
+}
+
+.articleBody code {
+	color: #000;
+}
+.show {
+	display: block !important; 
+	visibility: inherit !important;
+}
+
+.printfooter {
+	display: none;
+}
+
+/* hides the first element if it's a p (used for breadcumbs)*/
+#mw-content-text > p:nth-child(1) {
+	display: none;
+}
+
+#cta {
+	float: right;
+	clear: both;
+	min-width: 140px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding: 10px;
+	margin-left: 20px;
+}
+
+#cta + h2 {
+	clear: both;
+}
+
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.floatleft .image{
+	margin-right: 5px;
+}
+
+/* Fix to hide first h1 on the content */
+#mw-content-text > #intro > h1,
+#mw-content-text > h1:nth-child(2),
+#mw-content-text > h1:nth-child(1) {
+	visibility: hidden;
+	display: none;
+}
+
+#editform textarea {
+	width: 100%;
+}
+
+#mw-content-text h2,
+#mw-content-text h1 {
+	border-bottom: 1px solid #CCCCCC;
+	clear: both;
+}
+
+
+.articleBody h1 {
+	clear: both
+}
+
+.articleBody dl dt {
+	font-weight: bold;
+	font-family: ProximaNovaSemiBold !important;
+	margin: 10px 0;
+}
+
+/* homepage */
+
+#wrapper #linkmosaic {
+	clear:both;
+	margin:0 0 14px;
+}
+
+#linkmosaic li {
+	float:left;
+	width:235px;
+	margin:0 7px 10px 0;
+	padding:8px 0 0;
+}
+#linkmosaic li h2 {
+	margin-left:86px;
+}
+#linkmosaic li .txt {
+	margin-left:86px;
+}
+.multi_button {
+	color:#326DB5;
+	display:inline-block;
+	float:left;
+	font-size:11px;
+	line-height:14px;
+	font-weight:bold;	
+	margin:10px 0 0 0;
+	min-width:115px;
+	text-decoration:none;	
+	clear:both;	
+	margin-top:22px;
+}
+.multi_button .container {
+	background:transparent url(images/buttons/bk_multi_button.png) no-repeat scroll 0 0;
+	display:block;
+	margin:0 -1px 0 0;
+	padding:0; /* padding-right 1px for ie6/ie7 */
+}
+*:first-child+html .multi_button .container {
+	padding-right:1px;
+} /* ie7 */
+.multi_button .container .rightside {
+	background:transparent url(images/buttons/bk_multi_button_right.png) no-repeat scroll 100% 0;
+	display:block;
+	padding:8px 16px 13px 17px;
+	font-size:13px;
+	line-height:14px;
+}
+.multi_button .container .item {
+	background:transparent url(images/buttons/grn_arrow.gif) no-repeat scroll 0 1px; /* background-position:0 2px; for ie6/ie7 */
+	margin:0 23px 0 0;
+	padding:0 0 0 19px;
+	color:#326DB5;	
+	text-decoration:none;
+}
+*:first-child+html .multi_button .container .item {
+	background-position:0 2px;
+} /* ie7 */	
+.multi_button .container .ilast {
+	margin-right:0px;
+}
+.multi_button .item:hover {
+	text-decoration:underline;
+}
+#wrapper #twocol_wrap {background:transparent url(images/pnav_hr.gif) repeat-x scroll 10px 0;}
+#wrapper #twocol_wrap #col1,
+#wrapper #twocol_wrap #col2 {padding:30px 0 0 0;}		
+#wrapper #twocol_wrap #col1 {float:left; width:395px; background:transparent url(images/vert_sep.gif) repeat-y scroll 100% 0;}
+#wrapper #twocol_wrap #col2 {float:right; margin-left:-1px; padding-left:44px; width:248px; background:transparent url(images/vert_sep.gif) repeat-y scroll 0 0;}
+#wrapper #twocol_wrap h1 {margin-bottom:14px;}		
+#wrapper #twocol_wrap #col1 .green_arrow_list {
+	float:left; width:180px; margin-right:9px;
+	font-size:12px; line-height:14px;
+}
+
+#wrapper #twocol_wrap #col1 .green_arrow_list li {
+	background-position:0 0;
+	padding-bottom:6px;
+}
+.green_arrow_list a:hover{
+	text-decoration: underline;
+}
+
+.green_arrow_list li{
+	background: url(images/buttons/grn_arrow.gif) left center no-repeat;
+	padding-left:20px;
+}
+#col1 .green_arrow_list {
+	margin: 0;
+}
+/* old css*/
+
+/* Home css*/
+
+#linkmosaic > ul > li:nth-child(1) {
+	border-width: 0 1px 1px 0;
+}
+#linkmosaic > ul > li:nth-child(2) {
+	border-width: 0 0 1px 0;
+}
+#linkmosaic > ul > li:nth-child(3) {
+	border-width: 0 0 1px 1px;
+}
+
+#linkmosaic > ul:nth-child(5) > li {
+	border-bottom-width: 0;
+}
+#linkmosaic > ul:nth-child(5) > li:nth-child(2) {
+	border-right-width: 1px;
+}
+#linkmosaic > ul > li {
+	margin: 0;
+	border: 0px solid #ccc; 
+	padding: 10px 51px 10px 52px;
+	width: 180px;
+	min-height: 200px;
+}
+
+#linkmosaic > ul:nth-child(5) > li:nth-child(1) {}
+#linkmosaic > ul {
+	list-style: none;
+	margin: 0;
+}
+#linkmosaic > ul > li > span {
+	display: block;
+	text-align: center;
+	margin-top: 15px;
+}
+#linkmosaic ul li h2 {
+	margin: 10px 0;
+	text-align: center;
+	border: none;
+}
+#linkmosaic > ul > li > h2 > span a {
+	color: #048ec6;
+	font-size: 24px;
+}
+#linkmosaic li .txt {
+	margin: 0px;
+	text-align: center;
+}
+#col1 > ul.green_arrow_list {
+	float: none;
+}
+#wrapper #twocol_wrap #col1 ul.green_arrow_list {
+	float: none;
+	width: auto;
+}
+#wrapper #twocol_wrap #col1 .green_arrow_list li,
+#wrapper #twocol_wrap #col2 .green_arrow_list li{
+	list-style-position: inside;
+	width: auto;
+	padding-left: 0px;
+	padding-bottom: 0;
+}
+#twocol_wrap #col1 h1,
+#twocol_wrap #col2 h1{
+	border: none;
+}
+#wrapper #twocol_wrap #col2 {
+	float: left;
+	padding: 30px 0 0 0;
+}
+
+#col2 .green_arrow_list {
+	margin: 0px;
+}
+.green_arrow_list a {
+	font-weight: normal;
+}
+.multi_button .container .rightside {
+	padding: 10px 0;
+}
+.item-fix a {
+	font-size: 16px;
+}
+.item-fix {
+	border-width: 0 1px 0 0;
+	border-color: #000;
+	border-style: solid;
+	padding-right: 7px;
+	margin-right: 4px;
+}
+.item-fix:last-child {
+	border: 0;
+}
+#fpobanner {
+	display: none;
+	visibility: hidden;
+}
+/* Home css*/
+
+#content-left {
+	float: left !important;
+}
+.center {
+	text-align: center;
+}
+
+#mw-content-text > #top > table {
+	clear: both;
+	font-size: 100%;
+	display: inherit;
+}
+
+#mw-content-text table {
+	border-collapse: separate;
+}
+
+div.floatleft, table.floatleft {
+	float: left;
+	position: relative;
+	margin: 0 .5em 0 0;
+	border: 0;
+}
+#mw-content-text p{
+	margin: .4em 0 .5em 0;
+}
+
+#mw-content-text ul li {
+	margin: 0 auto;
+	line-height:16px
+}
+.mw-headline {
+	font-size: inherit;
+}
+
+div.thumb div {
+    border: 1px solid #ccc;
+    padding: 3px !important;
+    background-color: #f9f9f9;
+    font-size: 94%;
+    text-align: center;
+    overflow: hidden;
+}
+div.thumb div div.thumbcaption {
+    border: none;
+    text-align: left;
+    line-height: 1.4em;
+    padding: .3em 0 .1em 0;
+}
+
+div#linkmosaic ul + p {
+    clear: both;
+    display: block;
+}
+
+.light-grey{
+	color: #949494;
+}
+
+.light-grey b{
+	color: #949494;
+}
